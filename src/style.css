@@ -21,11 +21,12 @@ body {
   background-color: #fff;
 }
 
-.logo {
- /* background-image: url('../sources/logo.png'); */
-  /* background-size: 80px; */
-  background-repeat: no-repeat;
-  z-index: 3;
+.logo img {
+  height: 50px;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
 }
 
 .nav-list a {
@@ -34,8 +35,74 @@ body {
 }
 
 .smoothie-list {
-  height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2em;
+  gap: 10%;
 }
+
+.smoothie-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 5em;
+  gap: 10%;
+}
+
+.myCard {
+  width: 17em;
+  height: auto;
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  border-radius: 25px;
+  background: #2600c1;
+  box-shadow: 0 0 0.5em #0000;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardImg {
+  width: 12em;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  margin-bottom: 3%;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.interation {
+  display: flex;
+  flex-direction: column;
+}
+
+.likeBtn {
+  background: none;
+  border: none;
+  font-size: 1.7em;
+  cursor: pointer;
+}
+
+.counter {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 2px;
+}
+
 
 footer {
   position: fixed;
