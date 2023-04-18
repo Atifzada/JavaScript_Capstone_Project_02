@@ -3,7 +3,7 @@ const fetchData = async () => {
   const response = await fetch('https://pokeapi.co/api/v2/pokemon?offset=0&limit=60');
   const data = await response.json();
   const myArray = data.results;
-  console.log(myArray);
+  // console.log(myArray);
   myArray.map(async (i) => {
     const response = await fetch(i.url);
     const data = await response.json();
