@@ -1,7 +1,7 @@
 {
   "name": "webpack-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "<!-- TABLE OF CONTENTS -->",
   "private": true,
   "scripts": {
     "test": "jest",
@@ -38,5 +38,14 @@
   "dependencies": {
     "jest-environment-jsdom": "^29.5.0",
     "lodash": "^4.17.21"
-  }
+  },
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atifzada/JavaScript_Capstone_Project_02.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Atifzada/JavaScript_Capstone_Project_02/issues"
+  },
+  "homepage": "https://github.com/Atifzada/JavaScript_Capstone_Project_02#readme"
 }

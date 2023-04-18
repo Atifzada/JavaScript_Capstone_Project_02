@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Puritan&family=Roboto&display=swap');
 
 * {
   padding: 0;
@@ -7,3 +7,108 @@
   font-family: "Alkatra", cursive;
 }
 
+body {
+  background-image: linear-gradient(60deg, rgb(252, 0, 255) 0%, rgb(0, 219, 222) 100%);
+  background-repeat: no-repeat;
+}
+
+.nav {
+  display: flex;
+  position: fixed;
+  padding: 10px 30px;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fff;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #000;
+}
+
+.smoothie-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2em;
+  gap: 10%;
+}
+
+.smoothie-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 5em;
+  gap: 10%;
+}
+
+.myCard {
+  width: 17em;
+  height: auto;
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  border-radius: 25px;
+  background: #2600c1;
+  box-shadow: 0 0 0.5em #0000;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardImg {
+  width: 12em;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  margin-bottom: 3%;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.interation {
+  display: flex;
+  flex-direction: column;
+}
+
+.likeBtn {
+  background: none;
+  border: none;
+  font-size: 1.7em;
+  cursor: pointer;
+}
+
+.counter {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 2px;
+}
+
+footer {
+  position: fixed;
+  width: auto;
+}
+
+footer h5 {
+  padding: 20px;
+}
