@@ -28,5 +28,6 @@ const fetchData = async () => {
     container.appendChild(myCard);
   });
   itemsCounter(myArray.length, counter);  
+  
 };
 export default fetchData;
