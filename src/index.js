@@ -6,4 +6,3 @@ const logo = require('../sources/mylogo.png');
 
 const img = document.getElementById('img');
 img.src = logo;
-
