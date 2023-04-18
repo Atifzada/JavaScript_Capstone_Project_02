@@ -94,7 +94,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 cd my-folder
-git clone https://github.com/Atifzada/JavaScript_Capstone_Project_02
+git clone https://github.com/Atifzada/JavaScript-Capstone_02
 
 ### Install
 
@@ -141,7 +141,8 @@ To run tests, run the following command:
 - **[Basic page structure]**
 - **[Get Unique ID from API]**
 - **[Get counter from API]**
-- **[Making UI more interactive]**
+
+- **Making UI more interactive**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -151,7 +152,7 @@ To run tests, run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Atifzada/JavaScript_Capstone_Project_02/issues).
+Feel free to check the [issues page](https://github.com/Atifzada/JavaScript-Capstone_02/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
