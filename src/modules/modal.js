@@ -7,24 +7,23 @@ smoothieContainer.addEventListener('click', () => {
     // modal.style.display = 'block';
 
         // Create the modal for each card
-        const modal = document.getElementById('modal');
-        modal.innerHTML = `
+        document.getElementById('modal').innerHTML = `
         <div class="cardContent">
-        <img src="${data.sprites.back_default}" alt="${data.name}" class="cardImg">
-        <span id = "close-btn">&times;</span>
-        <div class="cardHeader">
-        <h2>${data.name}</h2>
-        </div>
-        <div id = "modal-content">
-        <p>Comments for ${data.name}.</p>
-        
-        <h2>Add a comment</h2>
-        <form id = 'comments-form'>
-        <input id="name" type="text" placeholder="Your Name" required>
-        <textarea id="comment" name="your-insights" placeholder="your-insights"></textarea>
-        <button id="submit" type="submit">Comment</button>
-        </form>
-        </div>
+          <img src="${data.sprites.back_default}" alt="${data.name}" class="cardImg">
+          <span id = "close-btn">&times;</span>
+          <div class="cardHeader">
+          <h2>${data.name}</h2>
+          </div>
+          <div id = "modal-content">
+          <p>Comments for ${data.name}.</p>
+          
+          <h2>Add a comment</h2>
+          <form id = 'comments-form'>
+          <input id="name" type="text" placeholder="Your Name" required>
+          <textarea id="comment" name="your-insights" placeholder="your-insights"></textarea>
+          <button id="submit" type="submit">Comment</button>
+          </form>
+          </div>
         </div>
         `;
         
