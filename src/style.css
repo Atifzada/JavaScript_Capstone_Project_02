@@ -14,7 +14,6 @@ body {
 
 .nav {
   display: flex;
-  position: fixed;
   padding: 10px 30px;
   justify-content: space-between;
   width: 100%;
@@ -22,8 +21,9 @@ body {
 }
 
 .logo {
- /* background-image: url('../sources/logo.png'); */
-  /* background-size: 80px; */
+  background-image: url('../sources/logo.png');
+  background-color: #000;
+  background-size: 80px;
   background-repeat: no-repeat;
   z-index: 3;
 }
@@ -34,13 +34,17 @@ body {
 }
 
 .smoothie-list {
-  height: 90vh;
+  padding: 10px 20px;
+  height: 80vh;
+}
+
+.smoothie-topic {
+  /* padding: 10% 5%; */
 }
 
 footer {
   position: fixed;
   width: auto;
-
 }
 
 footer h5 {

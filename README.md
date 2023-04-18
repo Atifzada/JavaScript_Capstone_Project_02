@@ -67,6 +67,8 @@ APIs
 Interfaces
 Comments popup
 Counters
+Webpack
+Jest
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -124,6 +126,11 @@ To run tests, run the following command:
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
+👤 **Joy Phoebe**
+
+- GitHub: [@joyapisi](https://github.com/joyapisi)
+- Twitter: [@joyphoebe300](https://twitter.com/joyphoebe300)
+- LinkedIn: [@joyapisi](https://www.linkedin.com/in/joyapisi/)
 
 👤 **Atif Zada**
 
@@ -162,7 +169,7 @@ Feel free to check the [issues page](https://github.com/Atifzada/JavaScript-Caps
 
 If you like this project you can follow me and give the project a star.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"> (<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
