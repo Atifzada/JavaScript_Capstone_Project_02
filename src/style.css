@@ -24,6 +24,7 @@ body {
 .logo img {
   height: 50px;
 }
+
 .nav-list {
   display: flex;
   align-items: center;
@@ -103,11 +104,9 @@ body {
   margin: 2px;
 }
 
-
 footer {
   position: fixed;
   width: auto;
-
 }
 
 footer h5 {
