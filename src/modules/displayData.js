@@ -12,7 +12,7 @@ const fetchData = async () => {
     myCard.classList = 'myCard';
     myCard.id = `${data.id}`;
     myCard.innerHTML = `<div class="cardContent"> 
-    <img src="${data.sprites.back_shiny}" alt="${data.name}" class="cardImg">
+    <img src="${data.sprites.back_default}" alt="${data.name}" class="cardImg">
     <div class="cardHeader">
     <h2>${data.name}</h2>
     </div>
