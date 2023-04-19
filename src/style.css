@@ -15,7 +15,8 @@ body {
 .nav {
   color: #fff;
   display: flex;
-  position: fixed;
+
+  /* position: fixed; */
   padding: 10px 30px;
   justify-content: space-between;
   width: 100%;
@@ -77,15 +78,17 @@ body {
   width: 12em;
   height: auto;
   background-color: rgb(255, 255, 255);
+  border: 2px solid black;
   border-radius: 20px;
   margin-bottom: 3%;
 }
 
-.cardHeader {
+.cardTitle {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
+  color: #fff;
 }
 
 .interation {
@@ -100,17 +103,26 @@ body {
   cursor: pointer;
 }
 
-.counter {
+.likeCounter {
   font-size: 1.5em;
   text-align: center;
+  color: #ffff;
   margin: 2px;
 }
 
+.fa-thumbs-up::before {
+  content: "\f164";
+  color: wheat;
+}
+
 footer {
-  position: fixed;
+  /* position: fixed; */
+  height: 0;
   width: auto;
 }
 
 footer h5 {
+  color: #fff;
+  background: #2600c1;
   padding: 20px;
 }
