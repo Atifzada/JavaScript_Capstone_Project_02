@@ -25,6 +25,7 @@ const likesDisplay = async () => {
   const thumbsUp = document.querySelectorAll('.fa-thumbs-up');
   const likesCounter = document.querySelectorAll('.likeCounter');
   const cards = document.querySelectorAll('.myCard');
+  // console.log(likeBtns);
   likeBtns.forEach((btn, index) => {
     btn.addEventListener('click', async () => {
       thumbsUp[index].classList.remove('fa-regular');

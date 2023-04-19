@@ -18,6 +18,7 @@ const fetchData = async () => {
       const myCard = document.createElement('div');
       myCard.classList = 'myCard';
       myCard.id = `${data.id}`;
+      // console.log(data.id);
       myCard.innerHTML = `<div class="cardContent"> 
     <img src="${data.sprites.back_default}" alt="${data.name}" class="cardImg">
     <div class="cardTitle">
