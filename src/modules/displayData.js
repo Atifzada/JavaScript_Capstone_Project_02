@@ -1,5 +1,8 @@
+import itemsCounter from './counter.js';
+
+const counter = document.getElementById('add-new-link');
+const container = document.getElementById('smoothie-container');
 const fetchData = async () => {
-  const container = document.getElementById('smoothie-container');
   const response = await fetch('https://pokeapi.co/api/v2/pokemon?offset=0&limit=60');
   const data = await response.json();
   const myArray = data.results;
@@ -24,6 +27,6 @@ const fetchData = async () => {
     `;
     container.appendChild(myCard);
   });
+  itemsCounter(myArray.length, counter);
 };
-
 export default fetchData;

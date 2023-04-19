@@ -13,12 +13,13 @@ body {
 }
 
 .nav {
+  color: #fff;
   display: flex;
   position: fixed;
   padding: 10px 30px;
   justify-content: space-between;
   width: 100%;
-  background-color: #fff;
+  background: #2600c1;
 }
 
 .logo img {
@@ -28,11 +29,12 @@ body {
 .nav-list {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .nav-list a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 .smoothie-list {
