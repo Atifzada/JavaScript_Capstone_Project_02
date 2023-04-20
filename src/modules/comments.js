@@ -1,13 +1,13 @@
 const commentsPopup = () => {
   // Open reservation modal
-  const openModalBtn = document.querySelectorAll('[data-modal-target]');
-  openModalBtn.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const dialogContainer = document.querySelector(btn.dataset.modalTarget);
+  const displayPopup = document.querySelectorAll('[data-modal-target]');
+  displayPopup.forEach((button) => {
+    button.addEventListener('click', () => {
+      const displaySection = document.querySelector(button.dataset.modalTarget);
       document.body.classList.add('no-scroll');
-      dialogContainer.classList.add('dialog-container');
-      if (!dialogContainer.open) {
-        dialogContainer.showModal();
+      displaySection.classList.add('display-section');
+      if (!displaySection.open) {
+        displaySection.showModal();
       }
     });
   });
@@ -16,11 +16,11 @@ const commentsPopup = () => {
     const closeButtons = document.querySelectorAll('[data-close-button]');
     closeButtons.forEach((closeButton) => {
       closeButton.addEventListener('click', () => {
-        const dialogContainer = document.querySelector('.dialog-container');
-        if (dialogContainer) {
-          const dialog = dialogContainer.querySelector('dialog');
+        const displaySection = document.querySelector('.display-section');
+        if (displaySection) {
+          const dialog = displaySection.querySelector('dialog');
           dialog.close();
-          dialogContainer.classList.remove('dialog-container');
+          displaySection.classList.remove('display-section');
           document.body.classList.remove('no-scroll');
         }
       });

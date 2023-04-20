@@ -218,6 +218,7 @@ footer h5 {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  color: #fff;
 }
 .popup-content {
   display: flex;
@@ -226,16 +227,19 @@ footer h5 {
   align-items: center;
   gap: 30px;
   width: 80%;
+  color: #fff;
 }
 
 .contents {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  color: #fff;
 }
 
 #add-comments {
   width: 100%;
   padding: 0 30px;
+  color: #fff;
 }
 
 form {
@@ -249,7 +253,7 @@ form {
 }
 
 form>input, form>textarea{
-  padding: 5px 0 0 5px;
+  padding: 5px 0 5px 8px;
   border: 2px solid #000;
   border-radius: 0.1rem;
 
@@ -260,11 +264,25 @@ form>input, form>textarea{
 }
 
 #submit {
-  width: 35%;
+  width: 30%;
   align-self: self-start;
   border: 2px solid #000;
   box-shadow: 10px 10px 8px 1px #000;
   border-radius: 0.1rem;
+}
+
+.display-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  border-color: transparent;
+  background: linear-gradient(-50deg, #4ca9df, #292e91);
+  width: 60%;
+  border-radius: 2rem;
+  margin: auto;
+  padding: 2%;
+  gap: 2%;
 }
 
 /* Footer */
