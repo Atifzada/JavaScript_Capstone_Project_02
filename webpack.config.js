@@ -1,13 +1,11 @@
-/* eslint-disable */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  mode: 'none',
   entry: {
     index: './src/index.js',
   },
-  mode: 'none',
-  devtool: 'inline-source-map',
   devServer: {
     static: './dist',
   },
@@ -21,9 +19,6 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
-  optimization: {
-    runtimeChunk: 'single',
-  },
   module: {
     rules: [
       {
@@ -34,6 +29,13 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      },
     ],
+  },
+  optimization: {
+    runtimeChunk: 'single',
   },
 };
