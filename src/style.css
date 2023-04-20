@@ -126,3 +126,156 @@ footer h5 {
   background: #2600c1;
   padding: 20px;
 }
+
+/* modal  */
+.modal-card-img {
+  width: 20%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+.modal-card-img {
+  width: 20%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button-container button {
+  width: 120%;
+  margin-bottom: 5%;
+  padding: 3%;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+/* Comments Popup */
+.no-scroll {
+  overflow: hidden;
+  position: sticky;
+}
+
+#closeBtn {
+  font-size: 45px;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  align-self: self-end;
+}
+
+/* #closeDialoge {
+  color: #000;
+  background-color: transparent;
+  height: 40px;
+  width: 40px;
+  align-self: flex-end;
+  border: none;
+  cursor: pointer;
+} */
+
+.dialog-container {
+  position: fixed;
+  border-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EF5350;
+  width: 60vw;
+  border-radius: 2%;
+  margin: auto;
+  padding: 2%;
+  gap: 2%;
+}
+.dialog-container::backdrop {
+  background-color: #263238;
+}
+
+.specs {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+}
+
+#popup-img {
+  width: 70%;
+  height: auto;
+  background-color: #fff;
+  border-radius: 5rem;
+}
+
+.comments-list {
+  height: 200px;
+}
+
+.comments-topic {
+  display: grid;
+  grid-column: 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  width: 80%;
+}
+
+.contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#add-comments {
+  width: 100%;
+  padding: 0 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 12px;
+  padding: 20px 0;
+  width: 70%;
+}
+
+form>input, form>textarea{
+  padding: 5px 0 0 5px;
+  border: 2px solid #000;
+  border-radius: 0.1rem;
+
+}
+
+#name {
+  width: 70%;
+}
+
+#submit {
+  width: 35%;
+  align-self: self-start;
+  border: 2px solid #000;
+  box-shadow: 10px 10px 8px 1px #000;
+  border-radius: 0.1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #EF5350;
+  padding: 1em;
+}
+footer h2 {
+  font-size: 1em;
+}
+.footer-link {
+  text-decoration: none;
+  color: yellow;
+}
