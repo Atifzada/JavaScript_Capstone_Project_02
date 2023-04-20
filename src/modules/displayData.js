@@ -20,8 +20,43 @@ const fetchData = async () => {
     <span class='likeCounter'>0</span>
     <button data-modal-target="#popup${data.id}" class="comments-btn" id='${data.id}'>Comments</button>
     </div>
+
+    <dialog id='popup${data.id}' class='comments-popup'>
+    <button data-close-button id='closeBtn' class='closeBtn' title ='closing button' type='button'>
+     <a> &times;</a>
+    </button>
+    <img src="${data.sprites.front_default}" alt="${data.name}" id="popup-img">
+    <div class="comments-topic">
+      <h3>${data.name}</h3>
+    </div>
+    <div class="popup-content">
+      <div class="contents">
+        <div class="first-contents" >
+        <p>Order: ${data.order}</p>
+        <p>Weight: ${data.weight}</p>
+        </div>
+        <div class="second-contents">
+          <p>Height: ${data.height}</p>
+          <p>Base experience: ${data.base_experience}</p>
+        </div>
+      </div>
+      <div class="comments-display" id="comments-display">
+      <h3 class="comments-number" id="comments-number">Comments (0)</h3>
+      <div class="commentsList" id="commentsList">
+      </div>
+    <div id = "add-comments">
+      <form id = 'comments-form' action = '' class = 'form'>
+      <h4>Add a comment</h4>
+        <input id="name" class = "name" type="text" placeholder="Your Name" required/>
+        <textarea id="textarea" class = "textarea" name="your-insights" placeholder="your-insights"></textarea>
+        <button class="submit" id="submit" type="button">Comment</button>
+      </form>
+    </div>
+  </div>
+  </dialog>
     `;
       container.appendChild(myCard);
+      displayComments();
     });
     await Promise.all(LoadMyArray);
   } catch (error) {
