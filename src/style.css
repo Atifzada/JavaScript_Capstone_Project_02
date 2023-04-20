@@ -165,7 +165,7 @@ footer h5 {
 }
 
 #popup-img {
-  width: 35%;
+  width: 30%;
   height: auto;
   background-color: #fff;
   border-radius: 3rem;
@@ -203,11 +203,31 @@ footer h5 {
   font-size: 16px;
 }
 
-form , #add-comments {
+.comments-display {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  align-self: self-start;
+}
+
+.comments-number {
+  align-self: center;
+}
+
+#list {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 12px;
+  font-size: 14px;
+}
+
+form,
+#add-comments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
   padding: 0;
   width: 100%;
 }
@@ -238,7 +258,7 @@ form > textarea {
   position: fixed;
   border-color: transparent;
   background: #343bb6;
-  width: 60%;
+  width: 50%;
   border-radius: 2rem;
   margin: auto;
   padding: 0 0 20px 0;

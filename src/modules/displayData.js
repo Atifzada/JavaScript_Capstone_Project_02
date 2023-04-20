@@ -51,8 +51,9 @@ const fetchData = async () => {
           <p>Base experience: ${data.base_experience}</p>
         </div>
       </div>
+      <div class="comments-display" id="comments-display">
       <h3 class="comments-number" id="comments-number">Comments (0)</h3>
-      <div class="comments-display" id="comments-display"></div>
+      </div>
     
     <div id = "add-comments">
       <form id = 'comments-form'>
