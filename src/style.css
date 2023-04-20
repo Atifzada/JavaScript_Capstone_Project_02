@@ -13,40 +13,56 @@ body {
 }
 
 .nav {
+  color: #fff;
   display: flex;
+
+  /* position: fixed; */
   padding: 10px 30px;
   justify-content: space-between;
   width: 100%;
-  background-color: #fff;
+  background: #2600c1;
 }
 
-.logo {
-  background-image: url('../sources/logo.png');
-  background-color: #000;
-  background-size: 80px;
-  background-repeat: no-repeat;
-  z-index: 3;
+.logo img {
+  height: 50px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .nav-list a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 .smoothie-list {
-  padding: 10px 20px;
-  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2em;
+  gap: 10%;
 }
 
-.smoothie-topic {
-  /* padding: 10% 5%; */
+.smoothie-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 5em;
+  gap: 10%;
 }
 
 footer {
-  position: fixed;
-  width: auto;
+  height: 0;
+  width: 100%;
 }
 
 footer h5 {
+  color: #fff;
+  background: #2600c1;
   padding: 20px;
 }
