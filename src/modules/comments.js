@@ -13,12 +13,12 @@ const commentsPopup = () => {
   });
   // Close reservation modal
   document.addEventListener('DOMContentLoaded', () => {
-    const closeButtons = document.querySelectorAll('[data-close-button]');
-    closeButtons.forEach((closeButton) => {
-      closeButton.addEventListener('click', () => {
+    const closeBtn = document.querySelectorAll('[data-close-button]');
+    closeBtn.forEach((closeBtn) => {
+      closeBtn.addEventListener('click', () => {
         const displaySection = document.querySelector('.display-section');
         if (displaySection) {
-          const dialog = displaySection.querySelector('dialog');
+          const dialog = displaySection.getElementsById('closeBtn');
           dialog.close();
           displaySection.classList.remove('display-section');
           document.body.classList.remove('no-scroll');

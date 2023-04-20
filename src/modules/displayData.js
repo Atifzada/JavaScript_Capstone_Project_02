@@ -1,6 +1,7 @@
 import itemsCounter from './counter.js';
 import { likes, likesDisplay } from './likesCount.js';
 import commentsPopup from './comments.js';
+import { commentsDisplay } from './fetchComments.js';
 
 const counter = document.getElementById('add-new-link');
 const container = document.getElementById('smoothie-container');
@@ -37,17 +38,17 @@ const fetchData = async () => {
     </button>
     <img src="${data.sprites.front_default}" alt="${data.name}" id="popup-img">
     <div class="comments-topic">
-      <h2>${data.name.toUpperCase()}</h2>
+      <h2>${data.name}</h2>
     </div>
     <div class="popup-content">
       <div class="contents">
         <div class="first-contents" >
-          <p>Weight: ${data.weight}</p>
-          <p>Height: ${data.height}</p>
+        <p>Order: ${data.order}</p>
+        <p>Weight: ${data.weight}</p>
         </div>
-        <div class="second-contents">
+        <div class="second-contents">       
+          <p>Height: ${data.height}</p>
           <p>Base experience: ${data.base_experience}</p>
-          <p>Order: ${data.order}</p>
         </div>
       </div>
       <h2 class="comments-number" id="comments-number">Comments (0)</h2>
@@ -58,7 +59,7 @@ const fetchData = async () => {
       <form id = 'comments-form'>
         <input id="name" type="text" placeholder="Your Name" required>
         <textarea id="comment" name="your-insights" placeholder="your-insights"></textarea>
-        <button id="submit" type="submit">Comment</button>
+        <button class="submit" id="submit" type="submit">Comment</button>
       </form>
   </div> 
   </dialog>
@@ -69,6 +70,7 @@ const fetchData = async () => {
     likes();
     likesDisplay();
     commentsPopup();
+    commentsDisplay();
     itemsCounter(myArray.length, counter);
   } catch (error) {
     const errorMessage = 'Error, try again later.';

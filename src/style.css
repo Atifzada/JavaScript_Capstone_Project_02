@@ -116,9 +116,8 @@ body {
 }
 
 footer {
-  /* position: fixed; */
   height: 0;
-  width: auto;
+  width: 100%;
 }
 
 footer h5 {
@@ -128,23 +127,12 @@ footer h5 {
 }
 
 /* modal  */
-.modal-card-img {
-  width: 20%;
-  height: auto;
-  background-color: rgb(255, 255, 255);
-  border-radius: 20px;
-}
-.modal-card-img {
-  width: 20%;
-  height: auto;
-  background-color: rgb(255, 255, 255);
-  border-radius: 20px;
-}
 .button-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .button-container button {
   width: 120%;
   margin-bottom: 5%;
@@ -152,30 +140,23 @@ footer h5 {
   font-size: 1.2em;
   cursor: pointer;
 }
-/* Comments Popup */
-.no-scroll {
-  overflow: hidden;
-  position: sticky;
-}
 
+/* Comments Popup */
 #closeBtn {
-  font-size: 45px;
-  font-weight: 500;
+  font-size: 40px;
+  font-weight: 400;
+  height: 30px;
   background-color: transparent;
   border: none;
   color: #fff;
   align-self: self-end;
+  padding: 0 10px;
+  top: 0;
 }
 
-/* #closeDialoge {
-  color: #000;
-  background-color: transparent;
-  height: 40px;
-  width: 40px;
-  align-self: flex-end;
-  border: none;
-  cursor: pointer;
-} */
+.popup {
+  padding: 0;
+}
 
 .dialog-container {
   position: fixed;
@@ -183,15 +164,16 @@ footer h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #EF5350;
+  background-color: #ef5350;
   width: 60vw;
   border-radius: 2%;
   margin: auto;
   padding: 2%;
   gap: 2%;
 }
-.dialog-container::backdrop {
-  background-color: #263238;
+
+.comments-popup {
+  padding: 0;
 }
 
 .specs {
@@ -202,10 +184,10 @@ footer h5 {
 }
 
 #popup-img {
-  width: 70%;
+  width: 47%;
   height: auto;
   background-color: #fff;
-  border-radius: 5rem;
+  border-radius: 3rem;
 }
 
 .comments-list {
@@ -213,19 +195,20 @@ footer h5 {
 }
 
 .comments-topic {
-  display: grid;
-  grid-column: 1fr;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 12px;
   color: #fff;
+  padding-top: 3%;
 }
+
 .popup-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  gap: 12px;
   width: 80%;
   color: #fff;
 }
@@ -246,17 +229,16 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   gap: 12px;
   padding: 20px 0;
   width: 70%;
 }
 
-form>input, form>textarea{
+form > input,
+form > textarea {
   padding: 5px 0 5px 8px;
   border: 2px solid #000;
   border-radius: 0.1rem;
-
 }
 
 #name {
@@ -285,15 +267,7 @@ form>input, form>textarea{
   gap: 2%;
 }
 
-/* Footer */
-footer {
-  background-color: #EF5350;
-  width: 100%;
-}
-footer h2 {
-  font-size: 1em;
-}
-.footer-link {
-  text-decoration: none;
-  color: yellow;
+.no-scroll {
+  overflow: hidden;
+  position: sticky;
 }
