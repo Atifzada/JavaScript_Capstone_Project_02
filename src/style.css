@@ -126,21 +126,6 @@ footer h5 {
   padding: 20px;
 }
 
-/* modal  */
-.button-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.button-container button {
-  width: 120%;
-  margin-bottom: 5%;
-  padding: 3%;
-  font-size: 1.2em;
-  cursor: pointer;
-}
-
 /* Comments Popup */
 #closeBtn {
   font-size: 40px;
@@ -172,10 +157,6 @@ footer h5 {
   gap: 2%;
 }
 
-.comments-popup {
-  padding: 0;
-}
-
 .specs {
   display: flex;
   justify-content: space-evenly;
@@ -184,7 +165,7 @@ footer h5 {
 }
 
 #popup-img {
-  width: 47%;
+  width: 35%;
   height: auto;
   background-color: #fff;
   border-radius: 3rem;
@@ -208,30 +189,27 @@ footer h5 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  align-self: center;
   gap: 12px;
-  width: 80%;
+  width: auto;
   color: #fff;
 }
 
 .contents {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: auto;
   color: #fff;
+  font-size: 16px;
 }
 
-#add-comments {
-  width: 100%;
-  padding: 0 30px;
-  color: #fff;
-}
-
-form {
+form , #add-comments {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 12px;
-  padding: 20px 0;
-  width: 70%;
+  padding: 0;
+  width: 100%;
 }
 
 form > input,
@@ -246,7 +224,7 @@ form > textarea {
 }
 
 #submit {
-  width: 30%;
+  /* width: 30%; */
   align-self: self-start;
   border: 2px solid #000;
   box-shadow: 10px 10px 8px 1px #000;
@@ -259,12 +237,12 @@ form > textarea {
   align-items: center;
   position: fixed;
   border-color: transparent;
-  background: linear-gradient(-50deg, #4ca9df, #292e91);
+  background: #343bb6;
   width: 60%;
   border-radius: 2rem;
   margin: auto;
-  padding: 2%;
-  gap: 2%;
+  padding: 0 0 20px 0;
+  gap: 5px;
 }
 
 .no-scroll {

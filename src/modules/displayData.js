@@ -38,7 +38,7 @@ const fetchData = async () => {
     </button>
     <img src="${data.sprites.front_default}" alt="${data.name}" id="popup-img">
     <div class="comments-topic">
-      <h2>${data.name}</h2>
+      <h3>${data.name}</h3>
     </div>
     <div class="popup-content">
       <div class="contents">
@@ -51,16 +51,17 @@ const fetchData = async () => {
           <p>Base experience: ${data.base_experience}</p>
         </div>
       </div>
-      <h2 class="comments-number" id="comments-number">Comments (0)</h2>
+      <h3 class="comments-number" id="comments-number">Comments (0)</h3>
       <div class="comments-display" id="comments-display"></div>
-    </div>
+    
     <div id = "add-comments">
-    <h3>Add a comment</h3>      
       <form id = 'comments-form'>
+      <h4>Add a comment</h4> 
         <input id="name" type="text" placeholder="Your Name" required>
         <textarea id="comment" name="your-insights" placeholder="your-insights"></textarea>
         <button class="submit" id="submit" type="submit">Comment</button>
       </form>
+    </div>
   </div> 
   </dialog>
     `;

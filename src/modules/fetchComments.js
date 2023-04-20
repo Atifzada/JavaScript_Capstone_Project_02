@@ -56,27 +56,27 @@ const comments = async (info) => {
 };
 
 const commentsDisplay = async () => {
-  const cards = document.querySelectorAll('.myCard');
-  cards.forEach((card) => {
+  const myCard = document.querySelectorAll('.myCard');
+  myCard.forEach((card) => {
     const displayPopup = card.querySelectorAll('[data-modal-target]');
     displayPopup.forEach((button) => {
       button.addEventListener('click', async () => {
         const details = JSON.stringify({
           item_id: `${button.id}`,
-          username: card.getElementById('name').value,
-          comment: card.getElementById('comment').value,
+          username: card.querySelector('#name').value,
+          comment: card.querySelector('#comment').value,
         });
-        card.querySelector('name').value = '';
-        card.querySelector('comment').value = '';
+        card.querySelector('#name').value = '';
+        card.querySelector('#comment').value = '';
         await comments(details);
         /* Reload comments */
         const response = await fetch(`${involvementApi}?item_id=${button.id}`);
         const data = await response.json();
-        const commentsCount = card.getElementById('comments-number');
+        const commentsCount = card.querySelector('.comments-number');
         commentsCount.innerHTML = '';
-        data.forEach((comment) => {
-          const list = ` <li> ${comment.comment} - $
-{comment.creation_date} by ${comment.username}`;
+        data.forEach((cmnt) => {
+          const list = document.createElement('li');
+          list.innerHTML = `${cmnt.comment} - ${cmnt.creation_date} by ${cmnt.username}`;
           commentsCount.appendChild(list);
         });
       });

@@ -6,9 +6,9 @@ const likes = async () => {
   await fetch(involvementApi)
     .then((response) => response.json())
     .then((data) => {
-      // console.log(data);
+      console.log(data);
       const cardsArray = Array.from(cards);
-      // console.log(cardsArray);
+      console.log(cardsArray);
       cardsArray.forEach((myCard, index) => {
         data.map((item) => {
           if (item.item_id === myCard.id) {
