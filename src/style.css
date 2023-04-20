@@ -43,31 +43,32 @@ body {
   align-items: center;
   margin-top: 2em;
   gap: 10%;
+}
 
-  footer h5 {
-    color: #fff;
-    background: #2600c1;
-    padding: 20px;
-  }
+footer h5 {
+  color: #fff;
+  background: #2600c1;
+  padding: 20px;
+}
 
-  #submit {
-    width: 30%;
-    align-self: self-start;
-    border: 2px solid #000;
-    box-shadow: 10px 10px 8px 1px #000;
-    border-radius: 0.1rem;
-  }
+#submit {
+  width: 30%;
+  align-self: self-start;
+  border: 2px solid #000;
+  box-shadow: 10px 10px 8px 1px #000;
+  border-radius: 0.1rem;
+}
 
-  .display-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    border-color: transparent;
-    background: linear-gradient(-50deg, #4ca9df, #292e91);
-    width: 60%;
-    border-radius: 2rem;
-    margin: auto;
-    padding: 2%;
-    gap: 2%;
+.display-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  border-color: transparent;
+  background: linear-gradient(-50deg, #4ca9df, #292e91);
+  width: 60%;
+  border-radius: 2rem;
+  margin: auto;
+  padding: 2%;
+  gap: 2%;
 }
