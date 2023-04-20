@@ -1,7 +1,7 @@
 {
   "name": "webpack-demo",
   "version": "1.0.0",
-  "description": "<!-- TABLE OF CONTENTS -->",
+  "description": "",
   "private": true,
   "scripts": {
     "test": "jest",
@@ -31,21 +31,12 @@
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0",
-    "webpack": "^5.80.0",
+    "webpack": "^5.77.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.13.1"
   },
   "dependencies": {
     "jest-environment-jsdom": "^29.5.0",
     "lodash": "^4.17.21"
-  },
-  "main": "webpack.config.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Atifzada/JavaScript_Capstone_Project_02.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Atifzada/JavaScript_Capstone_Project_02/issues"
-  },
-  "homepage": "https://github.com/Atifzada/JavaScript_Capstone_Project_02#readme"
+  }
 }
