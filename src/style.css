@@ -288,7 +288,7 @@ form>input, form>textarea{
 /* Footer */
 footer {
   background-color: #EF5350;
-  padding: 1em;
+  width: 100%;
 }
 footer h2 {
   font-size: 1em;
