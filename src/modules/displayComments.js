@@ -11,7 +11,7 @@ const displayComments = async () => {
         try {
           const res = await fetch(`${InvolvementApi}?item_id=${btn.id}`);
           const data = await res.json();
-          const commentCounter = data.length;
+          // const commentCounter = data.length;
           const div = card.querySelector('.commentsList');
           div.innerHTML = '';
           data.forEach((comment) => {
@@ -19,11 +19,11 @@ const displayComments = async () => {
             li.innerHTML = `${comment.creation_date} ${comment.username}: "${comment.comment}"`;
             div.appendChild(li);
           });
-          commentsCount.forEach((count) => {
-            if (commentCounter > 0) {
-              commentsCounter(commentCounter, count);
-            }
-          });
+          // commentsCount.forEach((count) => {
+          //   if (commentCounter > 0) {
+          //     commentsCounter(commentCounter, count);
+          //   }
+          // });
           return true;
         } catch (error) {
           return error;
