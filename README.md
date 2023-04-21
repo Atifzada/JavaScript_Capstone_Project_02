@@ -27,7 +27,7 @@ HTML, CSS, JavaScript, webpack and API Project
 
 # 📖 [JavaScript_Capstone] <a name="JavaScript_Capstone"></a>
 
-**[JavaScript_Capstone]** is a simple web app that uses two external APIs known as <a href="https://pokeapi.co/">Pokemon API </a> and <a href "https://microverse.notion.site/Involvement-API-869e60b5ad104603aa6db59e08150270">Involvement API</a>. Tha API allows a user to get a list of items with a unique item id (or generate the unique id) and get detailed information about a given item. This project is built using webpack and served by a webpack dev server. It also follows <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">Gitflow.</a>
+**[JavaScript_Capstone]** is a simple web app that uses two external APIs known as <a href="https://pokeapi.co/">Pokemon API </a> and <a href= "https://microverse.notion.site/Involvement-API-869e60b5ad104603aa6db59e08150270">Involvement API</a>. Tha API allows a user to get a list of items with a unique item id (or generate the unique id) and get detailed information about a given item. This project is built using webpack and served by a webpack dev server. It also follows <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">Gitflow.</a>
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -59,9 +59,11 @@ HTML, CSS, JavaScript, webpack and API Project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🎥 <a href="https://www.loom.com/share/2fc1a7fb8e60449ab55da291548f307b" name="video-explanation">  Video Explanation </a>
+## 🎥  Live Demo 
+- <a href="https://www.loom.com/share/2fc1a7fb8e60449ab55da291548f307b" name="video-explanation">  Video Explanation </a>
 
-## 🚀 Live Demo <a href="" name="live-demo">Coming Soon!</a>
+## 🚀 Deployment
+- <a href="" name="live-demo">Coming Soon!</a>
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
