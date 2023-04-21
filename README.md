@@ -25,10 +25,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Pokedex<a name="about-project"></a>
+# 📖 Pokemon's World<a name="about-project"></a>
 
 
-**Pokedex**  is a JavaScript single-page Application, Built using ES6 features and Webpack bundler, notably modules, and consumes the PokeAPI using JavaScript async/await.
+**Pokemon's World**  is a JavaScript single-page Application, Built using ES6 features and Webpack bundler, notably modules, and consumes the PokeAPI using JavaScript async/await.
 
 ## 🛠 Built With <a name="built-with"></a>
 
