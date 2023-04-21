@@ -8,7 +8,7 @@ const AddComments = async () => {
   cardContainers.forEach((card) => {
     /* Selecting cards components (btns - title) */
     const modal = card.querySelectorAll('.submit');
-    const commentsCount = card.querySelectorAll('.comments-number');
+    // const commentsCount = card.querySelectorAll('.comments-number');
     modal.forEach((btn) => {
       btn.addEventListener('click', async (event) => {
         event.preventDefault();
@@ -33,7 +33,7 @@ const AddComments = async () => {
           /* Reload comments */
           const res = await fetch(`${InvolvementApi}?item_id=${card.id}`);
           const comments = await res.json();
-            //   const commentCounter = comments.length;
+          //   const commentCounter = comments.length;
           const div = card.querySelector('.commentsList');
           div.innerHTML = '';
           comments.forEach((comment) => {
@@ -41,11 +41,11 @@ const AddComments = async () => {
             li.innerHTML = `${comment.creation_date} by ${comment.username}: "${comment.comment}"`;
             div.appendChild(li);
           });
-            //   commentsCount.forEach((count) => {
-            //     if (commentCounter > 0) {
-            //       commentsCounter(commentCounter, count);
-            //     }
-            //   });
+          //   commentsCount.forEach((count) => {
+          //     if (commentCounter > 0) {
+          //       commentsCounter(commentCounter, count);
+          //     }
+          //   });
         });
       });
     });
