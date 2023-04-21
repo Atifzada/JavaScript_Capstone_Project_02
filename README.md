@@ -1,4 +1,4 @@
-# Leaderboard
+# JavaScript Capstone
 
 HTML, CSS, JavaScript, webpack and API Project
 <a name="readme-top"></a>
@@ -27,7 +27,7 @@ HTML, CSS, JavaScript, webpack and API Project
 
 # 📖 [JavaScript_Capstone] <a name="JavaScript_Capstone"></a>
 
-**[JavaScript_Capstone]** is a simple web app that uses an external API known as <a href="https://pokeapi.co/">Poke API </a>. Tha API allows a user to get a list of items with a unique item id (or generate the unique id) and get detailed information about a given item. This project is built using webpack and served by a webpack dev server. It also follows <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">Gitflow.</a>
+**[JavaScript_Capstone]** is a simple web app that uses an external API known as <a href="https://pokeapi.co/">Pokemon API </a>. Tha API allows a user to get a list of items with a unique item id (or generate the unique id) and get detailed information about a given item. This project is built using webpack and served by a webpack dev server. It also follows <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">Gitflow.</a>
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -51,7 +51,7 @@ HTML, CSS, JavaScript, webpack and API Project
 
 ### Key Features <a name="key-features"></a>
 
-- **[Poke_API]**
+- **[Pokemon_API]**
 - **[Gitflow]**
 - **[Webpack]**
 - **[Desktop-Version]**
@@ -59,9 +59,8 @@ HTML, CSS, JavaScript, webpack and API Project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🎥 Video Explanation <a name="video-explanation"></a>
-
-Coming soon!
+## 🎥 Video Explanation <a href="https://www.loom.com/share/120e109780b14c3e9c07e9c98c48d253" name="video-explanation" href="
+"></a>
 
 ## 🚀 Live Demo <a href="" name="live-demo">Coming Soon!</a>
 
@@ -76,13 +75,14 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
--A Git hub account
--Git bash
--Node JS
--Webpack
--Jest
--Visual Studio Code as your code editor
-<a href="https://pokeapi.co/">Poke API Documentation</a>
+- A Git hub account
+- Git bash
+- Node JS
+- Webpack
+- Jest
+- Visual Studio Code as your code editor
+- <a href="https://pokeapi.co/">Poke API Documentation</a>
+- <a href="https://microverse.notion.site/Involvement-API-869e60b5ad104603aa6db59e08150270">Involvement API Documentation</a>
 
 # Setup <a name="set-up"></a>
 
@@ -90,7 +90,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone[(https://github.com/joyapisi/JavaScript-Capstone.git)]
+  git clone[(https://github.com/Atifzada/JavaScript_Capstone_Project_02.git)]
 ```
 ## Understand Set Up Requirements
 Since this code is using webpack, you will run `npm start` in your terminal to run it instead of using the live server. 
@@ -208,6 +208,12 @@ If you think that change is necessary - open a Pull Request in this repository a
 - GitHub: (https://github.com/joyapisi)
 - Twitter: (https://twitter.com/joyapisi)
 - LinkedIn: (https://http://www.linkedin.com/in/joy-phoebe-00b80a13a)
+
+👤 **Atif Zada**
+
+- GitHub: (https://github.com/Atifzada)
+- Twitter: (https://twitter.com/atifzada)
+- LinkedIn: (https://http://www.linkedin.com/in/atifzada)
 
 ## 🤝 Contributing <a name="contributing"></a>
 
