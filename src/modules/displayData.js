@@ -1,3 +1,5 @@
+import displayComments from './displayComments';
+
 const container = document.getElementById('smoothie-container');
 const fetchData = async () => {
   try {

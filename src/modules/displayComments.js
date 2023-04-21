@@ -1,5 +1,3 @@
-import commentsCounter from './commentsCounter.js';
-
 const InvolvementApi = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/Iv5HOBEwgodN3maxflbz/comments';
 const displayComments = async () => {
   const cardContainers = document.querySelectorAll('.myCard');
