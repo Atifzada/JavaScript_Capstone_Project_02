@@ -1,5 +1,7 @@
 import itemsCounter from './counter.js';
 import { likes, likesDisplay } from './likesCount.js';
+import commentsPopup from './comments.js';
+import AddComments from './fetchComments.js';
 import displayComments from './displayComments.js';
 
 const counter = document.getElementById('add-new-link');
@@ -70,7 +72,9 @@ const fetchData = async () => {
     await Promise.all(LoadMyArray);
     likes();
     likesDisplay();
+    commentsPopup();
     displayComments();
+    AddComments();
     itemsCounter(myArray.length, counter);
   } catch (error) {
     const errorMessage = 'Error, try again later.';
