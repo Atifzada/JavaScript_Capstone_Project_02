@@ -1,6 +1,8 @@
+import itemsCounter from './counter.js';
 import { likes, likesDisplay } from './likesCount.js';
 import displayComments from './displayComments.js';
 
+const counter = document.getElementById('add-new-link');
 const container = document.getElementById('smoothie-container');
 const fetchData = async () => {
   try {
@@ -69,8 +71,9 @@ const fetchData = async () => {
     likes();
     likesDisplay();
     displayComments();
+    itemsCounter(myArray.length, counter);
   } catch (error) {
-    const errorMessage = 'Error.';
+    const errorMessage = 'Error, try again later.';
     const errorElement = document.createElement('div');
     errorElement.innerText = errorMessage;
     document.body.appendChild(errorElement);
