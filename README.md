@@ -7,53 +7,55 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [:movie_camera: Project Presentation](#project-presentation)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 JavaScript Capstone Project <a name="about-project"></a>
+# 📖 Pokemon's World<a name="about-project"></a>
 
-**JavaScript Capstone Project** The JavaScript capstone project is about building our own web application based on an external API. we will select an API that provides data  then build the webapp around it. The webapp will have 2 or 3 user interfaces.
+
+**Pokemon's World**  is a JavaScript single-page Application, Built using ES6 features and Webpack bundler, notably modules, and consumes the PokeAPI using JavaScript async/await.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>HTML</summary>
+  <summary>Languages &  bundlers</summary>
   <ul>
-    <li><a href="#">HTML</a></li>
-  </ul>
-</details>
-<details>
-  <summary>CSS</summary>
-  <ul>
-    <li><a href="#">CSS</a></li>
+    <li>js</li>
+    <li>ES6</li>
+    <li>webpack</li>
+    <li>Jest</li>
   </ul>
 </details>
 
 <details>
-  <summary>Java Script</summary>
+  <summary>Server</summary>
   <ul>
-    <li><a href="#">JS</a></li>
+    <li>Gethub Pages</li>
+    <li>Netlify</a></li>
   </ul>
 </details>
+
 <details>
-<summary>Github</summary>
+<summary>Database</summary>
   <ul>
-    <li><a href="#">Github</a></li>
+    <li>PokeAPI</a></li>
   </ul>
 </details>
 
@@ -61,21 +63,27 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Basic page structure]**
-
-APIs
-Interfaces
-Comments popup
-Counters
-
+- **Use GitFlow.**
+- **Single page application.**
+- **Use ES6 syntax.**
+- **Consume app data from API.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
+- comming soon
 
-- Live Demo: coming soon
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Project Presntation -->
+
+## :movie_camera: Project Presentation <a name="project-presentation"></a>
+
+Walking through the pokemon's world project.
+
+- [Project Presentation Link](https://www.loom.com/share/2fc1a7fb8e60449ab55da291548f307b)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -89,90 +97,89 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
+- Install Node.js.
+- Visual Studio Code or equivalent. 
+- Internet Browser
+
 ### Setup
 
 Clone this repository to your desired folder:
 
-cd my-folder
-git clone https://github.com/Atifzada/JavaScript-Capstone_02
+- cd my-folder
+- git clone [https://github.com/Atifzada/JavaScript_Capstone_Project_02.git](https://github.com/Atifzada/JavaScript_Capstone_Project_02.git)
 
 ### Install
 
 Install this project with:
 
-1.  Install WebHint: npm install --save-dev hint@7.x
-
-2.  Install StyleLint npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-
-3.  npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
-
+- cd my-project
+- git config --global --add safe.directory my-directory/my-folder/my-project
+ 
 ### Usage
 
-To run the project, Open index.html in browser.
+To run the project, execute the following command:
+
+- code .
+- git status
+- npm init
+- npm install
+- npm i webpack
+- npm start
 
 ### Run tests
 
 To run tests, run the following command:
 
+npm test
 
 ### Deployment
 
-- Will be deployed soon
+You can deploy this project using:
 
+- Github Pages.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
+👤 **Joy Phoebe**
+
+- GitHub: (https://github.com/joyapisi)
+- Twitter: (https://twitter.com/joyapisi)
+- LinkedIn: (https://http://www.linkedin.com/in/joy-phoebe-00b80a13a)
+
 👤 **Atif Zada**
 
-- GitHub: [@atifzada](https://github.com/Atifzada)
-- Twitter: [@atifzada](https://twitter.com/atifzada04)
-- LinkedIn: [@atifzada](https://www.linkedin.com/in/atif-zada-585693180/)
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- GitHub: (https://github.com/Atifzada)
+- Twitter: (https://twitter.com/atifzada)
+- LinkedIn: (https://http://www.linkedin.com/in/atifzada)
 
 <!-- FUTURE FEATURES -->
 
-### Key Features <a name="key-features"></a>
+## 🔭 Future Features <a name="future-features"></a>
 
-- **[Basic page structure]**
-- **[Get Unique ID from API]**
-- **[Get counter from API]**
-
-- **Making UI more interactive**
+- [ ] **Style final touches.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Atifzada/JavaScript-Capstone_02/issues).
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project you can follow me and give the project a star.
+Give a ⭐️ if you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-**Microverse**
+Templete used in project provided by (Microverse)!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
