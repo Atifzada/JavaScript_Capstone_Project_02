@@ -1,5 +1,4 @@
 const commentsPopup = () => {
-  // Open reservation modal
   const displayPopup = document.querySelectorAll('[data-modal-target]');
   displayPopup.forEach((button) => {
     button.addEventListener('click', () => {
