@@ -1,4 +1,4 @@
-const involvementApi = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/sExEVU49eBfzgZOnwbX2/likes';
+const involvementApi = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/bTEn2aJ1AxwKWzc1t6qt/likes';
 
 const likesDisplay = async () => {
   const likeBtns = document.querySelectorAll('.likeBtn');
@@ -25,9 +25,7 @@ const likes = async () => {
   await fetch(involvementApi)
     .then((response) => response.json())
     .then((data) => {
-      // console.log(data);
       const cardsArray = Array.from(cards);
-      // console.log(cardsArray);
       cardsArray.forEach((myCard, index) => {
         data.map((item) => {
           if (item.item_id === myCard.id) {
