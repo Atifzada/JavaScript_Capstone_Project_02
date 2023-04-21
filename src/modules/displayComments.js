@@ -1,6 +1,6 @@
 import commentsCounter from './commentsCounter.js';
 
-const InvolvementApi = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/Iv5HOBEwgodN3maxflbz/comments';
+const InvolvementApi = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/bTEn2aJ1AxwKWzc1t6qt/comments';
 const displayComments = async () => {
   const cardContainers = document.querySelectorAll('.myCard');
   cardContainers.forEach((card) => {

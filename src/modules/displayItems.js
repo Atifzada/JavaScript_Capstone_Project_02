@@ -9,19 +9,14 @@ const container = document.getElementById('smoothie-container');
 const fetchData = async () => {
   try {
     const response = await fetch('https://pokeapi.co/api/v2/pokemon?offset=0&limit=42');
-    // console.log(response);
     const data = await response.json();
-    // console.log(data);
     const myArray = data.results;
-    // console.log(myArray);
     const LoadMyArray = myArray.map(async (element) => {
       const response = await fetch(element.url);
       const data = await response.json();
-      // console.log(data);
       const myCard = document.createElement('div');
       myCard.classList = 'myCard';
       myCard.id = `${data.id}`;
-      // console.log(data.id);
       myCard.innerHTML = `<div class="cardContent">
     <img src="${data.sprites.front_default}" alt="${data.name}" class="cardImg">
     <div class="cardTitle">
@@ -32,14 +27,13 @@ const fetchData = async () => {
     <span class='likeCounter'>0</span>
     <button data-modal-target="#popup${data.id}" class="comments-btn" id='${data.id}'>Comments</button>
     </div>
-    
     <dialog id='popup${data.id}' class='comments-popup'>
     <button data-close-button id='closeBtn' class='closeBtn' title ='closing button' type='button'>
      <a> &times;</a>
     </button>
     <img src="${data.sprites.front_default}" alt="${data.name}" id="popup-img">
     <div class="comments-topic">
-      <h3>${data.name}</h3>
+      <h2>${data.name}</h2>
     </div>
     <div class="popup-content">
       <div class="contents">

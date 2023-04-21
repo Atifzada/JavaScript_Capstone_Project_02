@@ -29,5 +29,5 @@ describe('Testing item counter', () => {
 
   const counter = itemsCounter(data.length, line);
 
-  test('The amount of items = 3', () => { expect(counter).toBe(3); });
+  test('Total number of items = 3', () => { expect(counter).toBe(3); });
 });
