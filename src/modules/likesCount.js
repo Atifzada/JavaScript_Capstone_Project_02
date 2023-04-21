@@ -1,5 +1,22 @@
 const involvementApi = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/bTEn2aJ1AxwKWzc1t6qt/likes';
 
+const likes = async () => {
+  const likeCount = document.querySelectorAll('.likeCounter');
+  const cards = document.querySelectorAll('.myCard');
+  await fetch(involvementApi)
+    .then((response) => response.json())
+    .then((data) => {
+      const cardsArray = Array.from(cards);
+      cardsArray.forEach((myCard, index) => {
+        data.map((item) => {
+          if (item.item_id === myCard.id) {
+            likeCount[index].innerHTML = item.likes;
+          }
+          return likeCount[index].innerHTML;
+        });
+      });
+    });
+};
 const likesDisplay = async () => {
   const likeBtns = document.querySelectorAll('.likeBtn');
   const likesCounter = document.querySelectorAll('.likeCounter');
@@ -18,23 +35,6 @@ const likesDisplay = async () => {
       });
     });
   });
-};
-const likes = async () => {
-  const likeCount = document.querySelectorAll('.likeCounter');
-  const cards = document.querySelectorAll('.myCard');
-  await fetch(involvementApi)
-    .then((response) => response.json())
-    .then((data) => {
-      const cardsArray = Array.from(cards);
-      cardsArray.forEach((myCard, index) => {
-        data.map((item) => {
-          if (item.item_id === myCard.id) {
-            likeCount[index].innerHTML = item.likes;
-          }
-          return likeCount[index].innerHTML;
-        });
-      });
-    });
 };
 
 export { likes, likesDisplay };

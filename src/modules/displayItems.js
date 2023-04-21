@@ -71,7 +71,7 @@ const fetchData = async () => {
     AddComments();
     itemsCounter(myArray.length, counter);
   } catch (error) {
-    const errorMessage = 'Error, try again later.';
+    const errorMessage = 'Error.';
     const errorElement = document.createElement('div');
     errorElement.innerText = errorMessage;
     document.body.appendChild(errorElement);
