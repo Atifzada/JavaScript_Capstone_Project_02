@@ -2,7 +2,7 @@ const InvolvementApi = 'https://us-central1-involvement-api.cloudfunctions.net/c
 const displayComments = async () => {
   const cardContainers = document.querySelectorAll('.myCard');
   cardContainers.forEach((card) => {
-    const commentsCount = card.querySelectorAll('.comments-number');
+    // const commentsCount = card.querySelectorAll('.comments-number');
     const modal = card.querySelectorAll('[data-modal-target]');
     modal.forEach((btn) => {
       btn.addEventListener('click', async () => {
