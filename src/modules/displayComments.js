@@ -1,3 +1,5 @@
+// import commentsCounter from './commentsCounter.js';
+
 const InvolvementApi = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/Iv5HOBEwgodN3maxflbz/comments';
 const displayComments = async () => {
   const cardContainers = document.querySelectorAll('.myCard');
@@ -14,7 +16,7 @@ const displayComments = async () => {
           div.innerHTML = '';
           data.forEach((comment) => {
             const li = document.createElement('li');
-            li.innerHTML = `${comment.creation_date} by ${comment.username}: "${comment.comment}"`;
+            li.innerHTML = `${comment.creation_date} ${comment.username}: "${comment.comment}"`;
             div.appendChild(li);
           });
           // commentsCount.forEach((count) => {
