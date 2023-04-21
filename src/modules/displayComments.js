@@ -9,7 +9,7 @@ const displayComments = async () => {
         try {
           const res = await fetch(`${InvolvementApi}?item_id=${btn.id}`);
           const data = await res.json();
-        //   const commentCounter = data.length;
+          //   const commentCounter = data.length;
           const div = card.querySelector('.commentsList');
           div.innerHTML = '';
           data.forEach((comment) => {
