@@ -1,17 +1,23 @@
+import { likes, likesDisplay } from './likesCount.js';
 import displayComments from './displayComments.js';
 
 const container = document.getElementById('smoothie-container');
 const fetchData = async () => {
   try {
     const response = await fetch('https://pokeapi.co/api/v2/pokemon?offset=0&limit=42');
+    // console.log(response);
     const data = await response.json();
+    // console.log(data);
     const myArray = data.results;
+    // console.log(myArray);
     const LoadMyArray = myArray.map(async (element) => {
       const response = await fetch(element.url);
       const data = await response.json();
+      // console.log(data);
       const myCard = document.createElement('div');
       myCard.classList = 'myCard';
       myCard.id = `${data.id}`;
+      // console.log(data.id);
       myCard.innerHTML = `<div class="cardContent">
     <img src="${data.sprites.front_default}" alt="${data.name}" class="cardImg">
     <div class="cardTitle">
@@ -22,7 +28,7 @@ const fetchData = async () => {
     <span class='likeCounter'>0</span>
     <button data-modal-target="#popup${data.id}" class="comments-btn" id='${data.id}'>Comments</button>
     </div>
-
+    
     <dialog id='popup${data.id}' class='comments-popup'>
     <button data-close-button id='closeBtn' class='closeBtn' title ='closing button' type='button'>
      <a> &times;</a>
@@ -37,7 +43,7 @@ const fetchData = async () => {
         <p>Order: ${data.order}</p>
         <p>Weight: ${data.weight}</p>
         </div>
-        <div class="second-contents">
+        <div class="second-contents">       
           <p>Height: ${data.height}</p>
           <p>Base experience: ${data.base_experience}</p>
         </div>
@@ -48,19 +54,21 @@ const fetchData = async () => {
       </div>
     <div id = "add-comments">
       <form id = 'comments-form' action = '' class = 'form'>
-      <h4>Add a comment</h4>
+      <h4>Add a comment</h4> 
         <input id="name" class = "name" type="text" placeholder="Your Name" required/>
         <textarea id="textarea" class = "textarea" name="your-insights" placeholder="your-insights"></textarea>
         <button class="submit" id="submit" type="button">Comment</button>
       </form>
     </div>
-  </div>
+  </div> 
   </dialog>
     `;
       container.appendChild(myCard);
-      displayComments();
     });
     await Promise.all(LoadMyArray);
+    likes();
+    likesDisplay();
+    displayComments();
   } catch (error) {
     const errorMessage = 'Error.';
     const errorElement = document.createElement('div');
